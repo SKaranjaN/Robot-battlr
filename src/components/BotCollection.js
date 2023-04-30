@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BotCard from "./BotCard";
-
+import "./BotCollection.css";
 function BotCollection() {
   const [bot, setBot] = useState([]);
   console.log(bot);
@@ -12,26 +12,30 @@ function BotCollection() {
   useEffect(() => {
     fetchData();
   }, []);
+  const groupSize = 3;
+  const groups = bot
+    .map((_, i) => (i % groupSize === 0 ? bot.slice(i, i + groupSize) : null))
+    .filter((group) => group);
   return (
     <div>
-      <h1>This is the army</h1>
-      <p>
-        {bot.map((bot) => (
-          <BotCard
-            key={bot.id}
-            src={bot.avatar_url}
-            alt={bot.name}
-            name={bot.name}
-            clss={bot.bot_class}
-            health={bot.health}
-            damage={bot.damage}
-            armor={bot.armor}
-            catchphrase={bot.catchphrase}
-          />
-        ))}
-      </p>
+      {groups.map((group, i) => (
+        <div key={i} style={{ display: "flex" }}>
+          {group.map((bot) => (
+            <BotCard
+              key={bot.id}
+              src={bot.avatar_url}
+              alt={bot.name}
+              name={bot.name}
+              clss={bot.bot_class}
+              health={bot.health}
+              damage={bot.damage}
+              armor={bot.armor}
+              catchphrase={bot.catchphrase}
+            />
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
-
 export default BotCollection;

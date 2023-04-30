@@ -3,8 +3,12 @@ import "./BotCard.css";
 
 function BotCard(props) {
   const { src, alt, name, clss, health, damage, armor, catchphrase } = props;
+
+  function handleClick() {
+    console.log("I have  been clicked");
+  }
   return (
-    <div id="card">
+    <div id="card" onClick={handleClick}>
       <img src={src} alt={alt} />
       <p>{name}</p>
       <p>{clss}</p>
