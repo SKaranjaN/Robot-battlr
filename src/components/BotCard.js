@@ -10,7 +10,7 @@ function BotCard(props) {
   return (
     <div id="card" onClick={handleClick}>
       <img src={src} alt={alt} />
-      <p>{name}</p>
+      <p id="nameCard">{name}</p>
       <p>{clss}</p>
       <p>damage:{damage}</p>
       <p>health:{health}</p>
