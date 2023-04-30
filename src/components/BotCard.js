@@ -15,7 +15,7 @@ function BotCard(props) {
       <p>damage:{damage}</p>
       <p>health:{health}</p>
       <p>armor:{armor}</p>
-      <p>{catchphrase}</p>
+      <p id="cp">{catchphrase}</p>
     </div>
   );
 }
