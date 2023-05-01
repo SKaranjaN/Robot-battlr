@@ -11,11 +11,7 @@ function BotCard(props) {
   function handleDeleteClick() {
     fetch(`http://localhost:3000/bots/${bot.id}`, {
       method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      });
+    });
   }
 
   return (
