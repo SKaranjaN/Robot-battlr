@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Robot Battlr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Author: Stephen Karanja. 22/04/2023.
 
-## Available Scripts
+Description: A galactic overlord's application to choose and select their army bots depending on the specifications indicated for each of the bots.
 
-In the project directory, you can run:
+Landing Page:
+![Landing Page Image]()
 
-### `npm start`
+Demo: You can demo the site here.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- You can be able to select specific bots you wish to recruit to your army.
+- You can remove bots from your list that you may wish to replace.
+- You can permanently discharge bots from service.
+  Specifications:
 
-### `npm test`
+Setup/Installation Requirements:
+Here is a run-through of how to set up the application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository using the git clone link: https://github.com/SKaranjaN/Bank-of-Flatiron.git
+2. Navigate to the directory: `cd Financial-advisor-project`.
+3. Open the directory created with your favorite IDE. If Atom, type `atom .`; if VSCode, type `code .`. This will launch the editor with the project setup. Now feel free to hack around the project.
+4. For the API to fetch data you'll have to install json-server by running the bellow commands;
+   `npm init`
+   `npm install --save json-server`
+   `json-server --watch db.json`
+   `npm start`
+5. After this launch the application and have fun.
+   Known Bugs: None currently.
 
-### `npm run build`
+Technologies Used: REACT, HTML, CSS, and JavaScript.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Support and Contact Details:
+Primary E-mail Address: skaranja654@gmail.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License: This project is licensed under the MIT License. (c) 2023 Stephen Karanja.
