@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./YourBotArmy.css";
 
 function YourBotArmy(props) {
+  const [selectedBots, setSelectedBots] = useState([]);
+
+  const handleBotClick = (bot) => {
+    setSelectedBots((prevSelectedBots) => [...prevSelectedBots, bot]);
+  };
+
+  const filteredBots = props.bots.filter((bot) => !selectedBots.includes(bot));
+
   return (
     <div id="container">
-      {props.bots.map((bot) => (
-        <div id="YourBotArmy" key={bot.id}>
+      {filteredBots.map((bot) => (
+        <div id="YourBotArmy" key={bot.id} onClick={() => handleBotClick(bot)}>
           <img src={bot.avatar_url} alt={bot.name} />
           <p id="yname">{bot.name}</p>
           <p>{bot.bot_class}</p>
