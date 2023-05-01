@@ -1,0 +1,27 @@
+#container {
+  border: solid 1px grey;
+  height: 550px;
+  background-color: #b0e400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: scroll;
+}
+
+#YourBotArmy {
+  border: solid 2px grey;
+  border-radius: 10px;
+  padding: 0px;
+  width: 300px;
+  height: 500px;
+  margin: 17px;
+  background-color: cornsilk;
+}
+
+#yname {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
